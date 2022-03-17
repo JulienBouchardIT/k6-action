@@ -3,9 +3,9 @@ name: Main Workflow
 on:
   workflow_dispatch:
     inputs:
-        Script:
+        script:
           type: choice
-          description: script
+          description: Script
           options: 
           - test.js
 
@@ -19,7 +19,7 @@ jobs:
       - name: Run load test using actions tarball
         uses: grafana/k6-action@HEAD
         with:
-          filename: ${{ inputs.Script }}
+          filename: ${{ github.event.inputs.script }}
           cloud: true
           token: ${{ secrets.K6_TOKEN }}
           flags: --vus 1 --duration 10s
