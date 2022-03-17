@@ -1,3 +1,5 @@
+[![Main Workflow](https://github.com/JulienBouchardIT/k6-action/actions/workflows/main.yml/badge.svg)](https://github.com/JulienBouchardIT/k6-action/actions/workflows/main.yml)
+
 <div align="center">
   
   <img
@@ -9,6 +11,7 @@
   Open source load testing tool and SaaS for ambitious engineering teams.
 
 </div>
+
 
 ## Getting started
 
