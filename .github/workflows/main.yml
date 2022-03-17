@@ -9,12 +9,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run load test using action code from commit
-        uses: ./
-        with:
-          cloud: true
-          token: ${{ secrets.K6_TOKEN }}
-          flags: --vus 1 --duration 10s
       - name: Run load test using actions tarball
         uses: grafana/k6-action@HEAD
         with:
