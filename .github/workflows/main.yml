@@ -12,6 +12,7 @@ jobs:
       - name: Run load test using actions tarball
         uses: grafana/k6-action@HEAD
         with:
+          filename: test.js
           cloud: true
           token: ${{ secrets.K6_TOKEN }}
           flags: --vus 1 --duration 10s
