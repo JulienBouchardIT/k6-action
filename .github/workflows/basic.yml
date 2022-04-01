@@ -1,6 +1,7 @@
 name: Basic Workflow
-on: [push]
-
+on:
+  workflow_dispatch
+  
 jobs:
   k6_local_test:
     name: k6 local test run - basic example
